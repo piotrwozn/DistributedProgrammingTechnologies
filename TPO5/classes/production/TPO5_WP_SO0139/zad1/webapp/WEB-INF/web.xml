@@ -1,0 +1,26 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>BooksServlet</servlet-name>
+        <servlet-class>zad1.BooksServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BooksServlet</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>zad1.SearchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+</web-app>
